@@ -1,0 +1,109 @@
+.header{
+	width: 1000px;
+}
+.sidebar{
+	float: left;
+	width: 20%;
+}
+.main{
+	margin-left: 20%;
+
+ 
+}
+.wrapper{
+	margin-top: 100px;
+}
+.wrapper:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.footer{
+	height: 200px;
+	margin-top: 200px;
+}
+/*style header*/
+body{
+	font-family: Arial, sans-serif;
+}
+.menu{
+	display: flex;;
+	padding: 0;
+	list-style: none;
+}
+.menu li{
+	padding: 8px 16px;
+}
+.menu li:hover{
+	background-color: #DDD;
+}
+.has-submenu{
+	position: relative;
+}
+.has-submenu:hover .submenu{
+	display: block;
+}
+.submenu{
+	list-style: none;
+	padding: 0;
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 100%;
+	background-color: #DDD;
+}
+/*link chèn css về video*/
+
+.weekly-items{
+	display: flex;
+	padding: 0 12px;
+	padding: 12px;
+	border-bottom: 1px solid #DDD;
+	align-items: center;
+	width: 500px;
+}
+.weekly-items .info{
+	flex-grow: 1;
+}
+.weekly-items .number{
+	font-size: 20px;
+	padding: 0 8px;
+}
+.weekly-items .title{s
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.weekly-items .singer{
+	font-size: 13px;
+	color: #999;
+}
+.weekly-items .view{
+	font-size: 13px;
+	color: #999;
+}
+/*link style cho video*/
+.album-video{
+	margin-top: 50px;
+	width: 128px;
+	height: 128px;
+	background-color: #DDD;
+	background-image: url(https://loremflickr.com/128/128);
+	background-size: cover;
+	background-position: center;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	font-size: 60px;
+}
+.album-video .overlay{
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+}
+.album-video:hover .overlay{
+	opacity: 1;
+}
